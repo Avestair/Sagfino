@@ -10,3 +10,36 @@
 :root {
   direction: rtl;
 }
+
+.loading {
+  border: 3px solid hsla(185, 0%, 32%, 0.2);
+  border-top-color: #cb1b1b;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+
+.loading-button {
+  border: 3px solid #cb1b1b;
+  border-top-color: white;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  animation: spin 1s linear infinite;
+}
+
+.loading-button-withoutbg {
+  border: 3px solid white;
+  border-top-color: #cb1b1b;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
