@@ -1,4 +1,9 @@
 @tailwind base;
+@layer base {
+  :root {
+    @apply font-Vazirmatn;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -9,6 +14,10 @@
 
 :root {
   direction: rtl;
+}
+
+.ltr1 {
+  direction: rtl !important;
 }
 
 .loading {
@@ -42,4 +51,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Recommendtion-scrollbar {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e9e7e7;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cb1b1b;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8a1111 !important;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

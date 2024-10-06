@@ -24,7 +24,7 @@ export function WarningButton() {
 
 export function DangerButtons() {
   return (
-    <button className="p-2 rounded-xl bg-red-600 hover:bg-red-700 transition-all duration-300 gap-4 items-center content-center font-light   md:text-base text-sm font-Vazirmatn text-white flex justify-center">
+    <button className="p-2 rounded-md bg-red-600 hover:bg-red-700 transition-all duration-300 gap-4 items-center content-center font-light   md:text-base text-sm font-Vazirmatn text-white flex justify-center">
       <RiArrowRightWideLine className="md:w-5 md:h-5" />
       <p className="mt-[2px]">متن دکمه</p>
       <RiArrowLeftWideLine className="md:w-6 md:h-6 border-2 border-white rounded-md p-1" />
@@ -32,9 +32,25 @@ export function DangerButtons() {
   );
 }
 
+export function RedBorderButton({ rightArrow, leftArrow, content }) {
+  return (
+    <button className="p-2 rounded-md text-primary border-primary border bg-white hover:bg-primary hover:text-white transition-all duration-300 gap-4 items-center content-center font-light   md:text-base text-sm font-Vazirmatn flex justify-center">
+      <RiArrowRightWideLine
+        className={`md:w-5 md:h-5 ${rightArrow ? "" : "hidden"}`}
+      />
+      <p className="mt-[2px]">{content}</p>
+      <RiArrowLeftWideLine
+        className={`md:w-6 md:h-6 border-2 border-white rounded-md p-1 ${
+          leftArrow ? "" : "hidden"
+        }`}
+      />
+    </button>
+  );
+}
+
 export function SuccessButton() {
   return (
-    <button className="p-2 rounded-xl bg-green-600 hover:bg-green-700 transition-all duration-300 gap-4 items-center content-center font-light   md:text-base text-sm font-Vazirmatn text-white flex justify-center">
+    <button className="p-2 rounded-md bg-green-600 hover:bg-green-700 transition-all duration-300 gap-4 items-center content-center font-light   md:text-base text-sm font-Vazirmatn text-white flex justify-center">
       <RiArrowRightWideLine className="md:w-5 md:h-5" />
       <p className="mt-[2px]">متن دکمه</p>
       <RiArrowLeftWideLine className="md:w-6 md:h-6 border-2 border-white rounded-md p-1" />
