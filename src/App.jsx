@@ -23,12 +23,14 @@ import { CodeInput, Verification } from "./ui/CodeInput";
 import Navbar from "./components/Navbar";
 import { MeterFilter, PriceFilter } from "./ui/PriceFilter";
 import FilterModal from "./components/FilterModal";
+import { FilterProvider } from "./components/FilterContext";
 
 function App() {
   return (
-    <CheckboxProvider>
-      <RecommendedProvider>
-        {/* <p className="font-Vazirmatn">سلام دنیا!</p>
+    <FilterProvider>
+      <CheckboxProvider>
+        <RecommendedProvider>
+          {/* <p className="font-Vazirmatn">سلام دنیا!</p>
       <div className="grid px-6 gap-3 w-fit">
         <NeturalButtons />
         <WarningButton />
@@ -50,9 +52,10 @@ function App() {
         <PriceFilter />
         <MeterFilter />
         </div> */}
-        <FilterModal />
-      </RecommendedProvider>
-    </CheckboxProvider>
+          <FilterModal />
+        </RecommendedProvider>
+      </CheckboxProvider>
+    </FilterProvider>
   );
 }
 

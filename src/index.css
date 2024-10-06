@@ -53,30 +53,6 @@
   }
 }
 
-.Recommendtion-scrollbar {
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #e9e7e7;
-    border-radius: 5px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #cb1b1b;
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #8a1111 !important;
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -84,19 +60,19 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #888;
+  background: #e9e7e7;
   border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #cb1b1b;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #8a1111 !important;
 }
 
 /* Chrome, Safari, Edge, Opera */
