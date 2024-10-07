@@ -86,3 +86,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.bghero {
+  background-image: url("../public/herobg.jpg");
+  background-position: center;
+  background-size: cover;
+}

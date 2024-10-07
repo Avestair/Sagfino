@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 
 export function Searchbox({ placeholder }) {
   return (
-    <div className="flex font-Vazirmatn  border-2 border-gray-400 rounded-md text-sm">
+    <div className="flex bg-white font-Vazirmatn  border-2 border-gray-400 rounded-md text-sm">
       <RiSearch2Line className="w-5 h-5 text-gray-400 mr-2 mt-[5px]" />
       <input
         type="text"
@@ -113,22 +113,26 @@ export function SearchboxWithRecommendtion() {
 
   return (
     <>
-      <div className="grid border-2 border-gray-300 w-fit  rounded-md p-4 font-Vazirmatn Recommendtion-scrollbar">
+      <div className="grid gap-4 bg-white w-fit md:w-[70%] rounded-md p-4 font-Vazirmatn Recommendtion-scrollbar">
         <div className="flex justify-around">
           <p
-            className={`${isActive ? "!text-primary" : " "} cursor-pointer`}
+            className={`${
+              isActive ? "!text-primary" : " "
+            } transition-all duration-300 cursor-pointer`}
             onClick={() => setIsActive(!isActive)}
           >
             اجاره
           </p>
           <p
-            className={`${isActive ? "" : "!text-primary"} cursor-pointer`}
+            className={`${
+              isActive ? "" : "!text-primary"
+            } transition-all duration-300 cursor-pointer`}
             onClick={() => setIsActive(!isActive)}
           >
             خرید
           </p>
         </div>
-        <div className="flex divide-y-2 rounded-md text-sm">
+        <div className="flex divide-y-2 text-sm">
           <RiSearch2Line className="w-5 h-5 text-gray-400 mt-1" />
           <input
             type="text"
@@ -136,7 +140,7 @@ export function SearchboxWithRecommendtion() {
             value={searchTerm}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            className="rounded-md p-1 w-full focus:w-[230px] transition-all duration-300 outline-none placeholder:text-gray-400 mt-[2px]"
+            className=" p-2 w-full transition-all duration-300 outline-none placeholder:text-gray-400 mt-[2px]"
           />
         </div>
 

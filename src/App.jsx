@@ -24,6 +24,8 @@ import Navbar from "./components/Navbar";
 import { MeterFilter, PriceFilter } from "./ui/PriceFilter";
 import FilterModal from "./components/FilterModal";
 import { FilterProvider } from "./components/FilterContext";
+import Hero from "./components/Hero";
+import Latest from "./components/Latest";
 
 function App() {
   return (
@@ -51,8 +53,10 @@ function App() {
         <Navbar />
         <PriceFilter />
         <MeterFilter />
-        </div> */}
           <FilterModal />
+        </div> */}
+          <Hero />
+          <Latest />
         </RecommendedProvider>
       </CheckboxProvider>
     </FilterProvider>
