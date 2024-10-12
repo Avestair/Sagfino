@@ -92,3 +92,19 @@ input[type="number"] {
   background-position: center;
   background-size: cover;
 }
+
+.ad-img-border {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.recommendtion-border-radius {
+  border-radius: 0px 0px 6px 6px;
+}
+
+.searchbox-border-radius {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.searchbox-border {
+  border-bottom: 2px;
+}

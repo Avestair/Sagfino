@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 
 export function Searchbox({ placeholder }) {
   return (
-    <div className="flex bg-white font-Vazirmatn  border-2 border-gray-400 rounded-md text-sm">
+    <div className="flex bg-white font-Vazirmatn border-2 border-gray-400 rounded-md text-sm">
       <RiSearch2Line className="w-5 h-5 text-gray-400 mr-2 mt-[5px]" />
       <input
         type="text"
@@ -113,41 +113,48 @@ export function SearchboxWithRecommendtion() {
 
   return (
     <>
-      <div className="grid gap-4 bg-white w-fit md:w-[70%] rounded-md p-4 font-Vazirmatn Recommendtion-scrollbar">
-        <div className="flex justify-around">
-          <p
-            className={`${
-              isActive ? "!text-primary" : " "
-            } transition-all duration-300 cursor-pointer`}
+      <div
+        className={`relative grid gap-4 bg-white w-fit md:w-[50%] ${
+          isRecommendedHidden ? "rounded-md" : "searchbox-border-radius"
+        } p-4 font-Vazirmatn Recommendtion-scrollbar`}
+      >
+        <div className="flex justify-center w-full">
+          <div
+            className={`flex justify-center border-b-2 w-[50%] border-gray-300 ${
+              isActive ? "!text-primary !border-primary" : ""
+            } transition-all duration-300 ease-in-out cursor-pointer`}
             onClick={() => setIsActive(!isActive)}
           >
-            اجاره
-          </p>
-          <p
-            className={`${
-              isActive ? "" : "!text-primary"
-            } transition-all duration-300 cursor-pointer`}
+            <p>اجاره</p>
+          </div>
+
+          <div
+            className={`flex justify-center border-b-2 w-[50%] border-gray-300 ${
+              isActive ? "" : "!text-primary !border-primary"
+            } transition-all duration-300 ease-in-out cursor-pointer`}
             onClick={() => setIsActive(!isActive)}
           >
-            خرید
-          </p>
+            <p>خرید</p>
+          </div>
         </div>
-        <div className="flex divide-y-2 text-sm">
-          <RiSearch2Line className="w-5 h-5 text-gray-400 mt-1" />
+
+        <div className="flex text-sm">
+          <RiSearch2Line className="w-5 h-5 text-gray-400 mt-2" />
           <input
             type="text"
             placeholder="شهر یا استان مورد نظرت را وارد کن..."
             value={searchTerm}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            className=" p-2 w-full transition-all duration-300 outline-none placeholder:text-gray-400 mt-[2px]"
+            className="p-2 w-full transition-all duration-300 outline-none  placeholder:text-gray-400 mt-[2px]"
           />
         </div>
 
+        {/* Recommendation section */}
         <div
-          className={`rounded-md  text-sm text-customBlack ${
+          className={`absolute top-full left-0 recommendtion-border-radius transition-all duration-300 text-sm text-customBlack ${
             isRecommendedHidden ? "hidden" : "block"
-          } shadow-sm w-full  max-h-52 overflow-y-auto`}
+          } shadow-sm w-full max-h-52 overflow-y-auto bg-white z-50`}
         >
           <div className="mr-6">
             {filteredProvinces.length > 0 && (

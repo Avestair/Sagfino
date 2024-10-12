@@ -26,6 +26,9 @@ import FilterModal from "./components/FilterModal";
 import { FilterProvider } from "./components/FilterContext";
 import Hero from "./components/Hero";
 import Latest from "./components/Latest";
+import Tip from "./components/Tip";
+import RecommendedSearch from "./components/RecommendedSearch";
+import Moshaver from "./components/Moshaver";
 
 function App() {
   return (
@@ -57,6 +60,9 @@ function App() {
         </div> */}
           <Hero />
           <Latest />
+          <Tip />
+          <RecommendedSearch />
+          <Moshaver />
         </RecommendedProvider>
       </CheckboxProvider>
     </FilterProvider>
