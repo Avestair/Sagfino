@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       <div className="flex justify-center w-full">
-        <div className="flex md:justify-between w-[90%] mt-4 rounded-md justify-around p-2 bg-white">
+        <div className="flex md:justify-between w-[90%] mt-4 rounded-xl justify-around p-2 bg-white">
           {isNavclosed ? (
             <FiMenu
               onClick={handleMenu}

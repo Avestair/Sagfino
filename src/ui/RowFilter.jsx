@@ -17,7 +17,7 @@ const RowFilter = ({ values, filterName, resetTrigger }) => {
   return (
     <div className="grid gap-3">
       <p className="!text-base">{filterName}</p>
-      <div className="flex md:flex-nowrap flex-wrap gap-2 md:gap-0  md:border md:border-gray-300 rounded-md w-fit">
+      <div className="flex md:flex-nowrap flex-wrap gap-2 md:gap-0  md:border md:border-gray-300 rounded-xl w-fit">
         {values.map((item, index) => (
           <div
             key={index}
@@ -25,7 +25,7 @@ const RowFilter = ({ values, filterName, resetTrigger }) => {
           >
             <div
               onClick={() => handleSelect(index)}
-              className={`cursor-pointer w-[80px] select-none flex justify-center p-2 transition-all duration-300 ease-in-out border md:rounded-none rounded-md md:border-l border-gray-300
+              className={`cursor-pointer w-[80px] select-none flex justify-center p-2 transition-all duration-300 ease-in-out border md:rounded-none rounded-xl md:border-l border-gray-300
               ${
                 selectedOption === index
                   ? "bg-primary text-white"

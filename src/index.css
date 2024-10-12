@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url("../public/Vazirmatn.ttf");
+  src: url("/Vazirmatn.ttf");
 }
 
 :root {

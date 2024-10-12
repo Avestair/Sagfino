@@ -14,12 +14,12 @@ export default function CheckboxList({ ListTittle, ListId }) {
   }
 
   return (
-    <form className="w-fit grid md:p-4 p-2 border-[1px] border-gray-300 rounded-md">
+    <form className="w-fit grid md:p-4 p-2 border-[1px] border-gray-300 rounded-xl">
       <div
         onClick={handleClick}
         className={`flex md:gap-16 gap-8 select-none p-2 ${
           isClicked ? "border-info" : "border-gray-300"
-        } rounded-md w-fit border-2 text-sm transition-all duration-300`}
+        } rounded-xl w-fit border-2 text-sm transition-all duration-300`}
       >
         <p className="text-gray-600">{ListTittle}</p>
         {isClicked ? (
@@ -55,11 +55,11 @@ export default function CheckboxList({ ListTittle, ListId }) {
           <input
             value="حذف همه"
             type="reset"
-            className="text-xs md:text-sm text-primary border-2 focus:border-primary border-gray-300 outline-none p-2 rounded-md"
+            className="text-xs md:text-sm text-primary border-2 focus:border-primary border-gray-300 outline-none p-2 rounded-xl"
           />
           <button
             onClick={handleOnClick}
-            className="text-xs md:text-sm text-Success border-2 focus:border-Success border-gray-300 outline-none p-2 rounded-md"
+            className="text-xs md:text-sm text-Success border-2 focus:border-Success border-gray-300 outline-none p-2 rounded-xl"
           >
             انتخاب همه
           </button>

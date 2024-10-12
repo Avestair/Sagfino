@@ -5,12 +5,12 @@ import { useState, useRef } from "react";
 
 export function Searchbox({ placeholder }) {
   return (
-    <div className="flex bg-white font-Vazirmatn border-2 border-gray-400 rounded-md text-sm">
+    <div className="flex bg-white font-Vazirmatn border-2 border-gray-400 rounded-xl text-sm">
       <RiSearch2Line className="w-5 h-5 text-gray-400 mr-2 mt-[5px]" />
       <input
         type="text"
         placeholder={placeholder}
-        className="rounded-md p-1 w-full focus:w-[210px] transition-all duration-300 outline-none placeholder:text-gray-400  mt-[2px] focus:outline-none"
+        className="rounded-xl p-1 w-full focus:w-[210px] transition-all duration-300 outline-none placeholder:text-gray-400  mt-[2px] focus:outline-none"
       />
     </div>
   );
@@ -115,7 +115,7 @@ export function SearchboxWithRecommendtion() {
     <>
       <div
         className={`relative grid gap-4 bg-white w-fit md:w-[50%] ${
-          isRecommendedHidden ? "rounded-md" : "searchbox-border-radius"
+          isRecommendedHidden ? "rounded-xl" : "searchbox-border-radius"
         } p-4 font-Vazirmatn Recommendtion-scrollbar`}
       >
         <div className="flex justify-center w-full">

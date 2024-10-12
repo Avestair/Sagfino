@@ -12,7 +12,7 @@ export function PriceFilter() {
     <div className=" grid gap-3 md:text-sm text-xs">
       <div
         onClick={handleFilter}
-        className={`flex gap-3 md:px-4 p-2 border w-fit  text-gray-700 rounded-md ${
+        className={`flex gap-3 md:px-4 p-2 border w-fit  text-gray-700 rounded-xl ${
           isOpen ? "border-info" : "border-gray-300"
         }`}
       >
@@ -27,7 +27,7 @@ export function PriceFilter() {
 
       {/* filter container */}
       <div
-        className={` gap-2 border w-fit rounded-md justify-center justify-items-center p-2 ${
+        className={` gap-2 border w-fit rounded-xl justify-center justify-items-center p-2 ${
           isOpen ? "border-info" : "border-gray-300"
         }   ${isOpen ? "grid" : "hidden"}`}
       >
@@ -38,7 +38,7 @@ export function PriceFilter() {
             <input
               type="number"
               placeholder="مثلا 100000 تومان"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
 
@@ -47,7 +47,7 @@ export function PriceFilter() {
             <input
               type="number"
               placeholder="مثلا 100000000 تومان"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ export function PriceFilter() {
             <input
               type="number"
               placeholder="مثلا 100000 تومان"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
 
@@ -68,16 +68,16 @@ export function PriceFilter() {
             <input
               type="number"
               placeholder="مثلا 100000000 تومان"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
         </div>
 
         <div className="flex gap-2">
-          <button className="border border-gray-300 rounded-md w-[85px] md:w-[100px] text-Success p-2">
+          <button className="border border-gray-300 rounded-xl w-[85px] md:w-[100px] text-Success p-2">
             جست و جو
           </button>
-          <button className="border border-gray-300 rounded-md w-[85px] md:w-[100px] text-primary p-2">
+          <button className="border border-gray-300 rounded-xl w-[85px] md:w-[100px] text-primary p-2">
             حذف
           </button>
         </div>
@@ -98,7 +98,7 @@ export function MeterFilter() {
         onClick={handleFilter}
         className={`flex gap-3 cursor-pointer  border ${
           isOpen ? "border-info" : "border-gray-300"
-        } w-fit px-4 p-2 rounded-md`}
+        } w-fit px-4 p-2 rounded-xl`}
       >
         {isOpen ? (
           <IoIosArrowUp className="md:w-5 md:h-5" />
@@ -109,7 +109,7 @@ export function MeterFilter() {
       </div>
 
       <div
-        className={`gap-2 border border-info w-fit px-4 p-2 rounded-md ${
+        className={`gap-2 border border-info w-fit px-4 p-2 rounded-xl ${
           isOpen ? "grid" : "hidden"
         }`}
       >
@@ -119,7 +119,7 @@ export function MeterFilter() {
             <input
               type="number"
               placeholder="مثلا 70 متر"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
 
@@ -128,16 +128,16 @@ export function MeterFilter() {
             <input
               type="number"
               placeholder="مثلا 800 متر"
-              className="rounded-md text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
+              className="rounded-xl text-gray-700 transition-all duration-300 placeholder:text-gray-300 border border-gray-300 outline-none focus:border-info p-2 "
             />
           </div>
         </div>
 
         <div className="flex gap-2">
-          <button className="border border-gray-300 rounded-md w-[85px] md:w-[100px] text-Success p-2">
+          <button className="border border-gray-300 rounded-xl w-[85px] md:w-[100px] text-Success p-2">
             جست و جو
           </button>
-          <button className="border border-gray-300 rounded-md w-[85px] md:w-[100px] text-primary p-2">
+          <button className="border border-gray-300 rounded-xl w-[85px] md:w-[100px] text-primary p-2">
             حذف
           </button>
         </div>

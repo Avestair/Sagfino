@@ -29,6 +29,9 @@ import Latest from "./components/Latest";
 import Tip from "./components/Tip";
 import RecommendedSearch from "./components/RecommendedSearch";
 import Moshaver from "./components/Moshaver";
+import AmlakCard from "./ui/AmlakCard";
+import Amlak from "./components/Amlak";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -63,6 +66,8 @@ function App() {
           <Tip />
           <RecommendedSearch />
           <Moshaver />
+          <Amlak />
+          <Footer />
         </RecommendedProvider>
       </CheckboxProvider>
     </FilterProvider>

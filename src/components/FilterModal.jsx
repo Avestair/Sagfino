@@ -31,7 +31,7 @@ export default function FilterModal() {
 
   return (
     <div className="flex justify-center fixed inset-0 w-full">
-      <div className="backdrop-blur-sm overflow-y-auto grid gap-4 mt-4 mb-4 border border-gray-300 rounded-md p-4 w-fit">
+      <div className="backdrop-blur-sm overflow-y-auto grid gap-4 mt-4 mb-4 border border-gray-300 rounded-xl p-4 w-fit">
         <div className="flex justify-between md:px-6">
           <FiX
             onClick={() => setIsOpen(false)}
@@ -167,13 +167,13 @@ export default function FilterModal() {
           <div className="flex md:gap-3 md:text-sm text-xs justify-between md:justify-center mt-4">
             <button
               onClick={handleReset}
-              className="border border-gray-300 w-fit text-primary md:py-3 md:px-3 px-2 py-3 text-nowrap hover:text-white hover:bg-primary transition-all duration-300 rounded-md"
+              className="border border-gray-300 w-fit text-primary md:py-3 md:px-3 px-2 py-3 text-nowrap hover:text-white hover:bg-primary transition-all duration-300 rounded-xl"
             >
               حذف فیلترها
             </button>
             <button
               onClick={handleReset}
-              className="border border-gray-300 w-fit text-Success md:py-3 md:px-3 px-2 py-3 text-nowrap hover:text-white hover:bg-Success transition-all duration-300 rounded-md"
+              className="border border-gray-300 w-fit text-Success md:py-3 md:px-3 px-2 py-3 text-nowrap hover:text-white hover:bg-Success transition-all duration-300 rounded-xl"
             >
               اعمال فیلتر ها
             </button>
