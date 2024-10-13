@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#CB1B1B",
+        customBlack: "#0C0C0C",
         info: "#2F80ED",
         Error: "#2F80ED",
         ErrorLight: "#ED2E2E",
