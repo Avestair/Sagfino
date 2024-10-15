@@ -101,7 +101,7 @@ export default function Footer() {
               اجاره
             </p>
             <p className="hover:text-primary cursor-pointer transition-all duration-300">
-              >ثبت رایگان آگهی ملک
+              ثبت رایگان آگهی ملک
             </p>
             <p className="hover:text-primary cursor-pointer transition-all duration-300">
               املاک و مستقلات
@@ -132,10 +132,10 @@ export default function Footer() {
               پرسش های پر تکرار
             </p>
             <p className="hover:text-primary cursor-pointer transition-all duration-300">
-              یک سقف; بلاگ سقفینو
+              یک سقف، بلاگ سقفینو
             </p>
             <p className="hover:text-primary cursor-pointer transition-all duration-300">
-              حریم سخصی شما
+              حریم شخصی شما
             </p>
             <p className="hover:text-primary cursor-pointer transition-all duration-300">
               تعهدات ما و شما

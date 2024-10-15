@@ -7,7 +7,7 @@ export default function AmlakCard({
   comments,
 }) {
   return (
-    <div className="grid w-fit justify-items-center p-4 gap-4 border border-gray-100 shadow rounded-xl">
+    <div className="grid w-fit justify-items-center p-4 pb-8 gap-4 border border-gray-100 shadow rounded-xl">
       <img src={img} className="rounded-full w-[30%]" alt="" />
       <p className="text-lg">{tittle}</p>
       <p className="text-gray-700">{address}</p>

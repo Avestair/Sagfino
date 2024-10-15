@@ -13,6 +13,8 @@ export default {
         SuccessLight: "#00BA88",
         Warning: "#A9791C",
         WarningLight: "#F4B740",
+        GrayBg: "#F9F9F9",
+        GrayText: "#717171",
       },
       fontFamily: {
         Vazirmatn: "Vazirmatn",

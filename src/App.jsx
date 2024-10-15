@@ -32,6 +32,8 @@ import Moshaver from "./components/Moshaver";
 import AmlakCard from "./ui/AmlakCard";
 import Amlak from "./components/Amlak";
 import Footer from "./components/Footer";
+import AmlakModal from "./components/AmlakModal";
+import AdPage from "./components/AdPage";
 
 function App() {
   return (
@@ -61,13 +63,15 @@ function App() {
         <MeterFilter />
           <FilterModal />
         </div> */}
-          <Hero />
+          {/* <Hero />
           <Latest />
           <Tip />
           <RecommendedSearch />
           <Moshaver />
           <Amlak />
-          <Footer />
+
+          <Footer /> */}
+          <AdPage />
         </RecommendedProvider>
       </CheckboxProvider>
     </FilterProvider>

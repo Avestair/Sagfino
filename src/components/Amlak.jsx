@@ -1,5 +1,6 @@
 import logo1 from "../../public/12.jpg";
 import AmlakCard from "../ui/AmlakCard";
+import AmlakModal from "./AmlakModal";
 
 export default function Amlak() {
   const Amlakha = [
@@ -11,6 +12,8 @@ export default function Amlak() {
       rate: 4,
       activeAds: 200,
       comments: 14,
+      phoneNumber: "09153456789",
+      officeNumber: "0216789354",
     },
     {
       id: 1,
@@ -20,6 +23,8 @@ export default function Amlak() {
       rate: 4,
       activeAds: 200,
       comments: 14,
+      phoneNumber: "09153456789",
+      officeNumber: "0216789354",
     },
     {
       id: 1,
@@ -29,6 +34,8 @@ export default function Amlak() {
       rate: 4,
       activeAds: 200,
       comments: 14,
+      phoneNumber: "09153456789",
+      officeNumber: "0216789354",
     },
     {
       id: 1,
@@ -38,6 +45,8 @@ export default function Amlak() {
       rate: 4,
       activeAds: 200,
       comments: 14,
+      phoneNumber: "09153456789",
+      officeNumber: "0216789354",
     },
   ];
   return (
@@ -45,17 +54,24 @@ export default function Amlak() {
       <p className="text-xl">املاک برتر تهران</p>
       <div className="flex justify-evenly gap-8 ">
         {Amlakha.map((amlak) => (
-          <AmlakCard
-            key={amlak.id}
-            tittle={amlak.tittle}
-            img={amlak.img}
-            address={amlak.address}
-            rate={amlak.rate}
-            activeAds={amlak.activeAds}
-            comments={amlak.comments}
-          />
+          <>
+            <AmlakCard
+              key={amlak.id}
+              tittle={amlak.tittle}
+              img={amlak.img}
+              address={amlak.address}
+              rate={amlak.rate}
+              activeAds={amlak.activeAds}
+              comments={amlak.comments}
+            />
+            {/* <AmlakModal
+              tittle={amlak.tittle}
+              logo={amlak.img}
+              phoneNumber={amlak.phoneNumber}
+              officeNumber={amlak.officeNumber}
+            /> */}
+          </>
         ))}
-        <p></p>
       </div>
     </div>
   );

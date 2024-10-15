@@ -12,7 +12,7 @@ export default function meshaverCard({ img, tittle, company, rate }) {
           امتیاز {rate} از 10
         </p>
       </div>
-      <button className="border border-primary w-[60%] rounded-xl p-2 text-sm text-primary hover:bg-primary hover:text-white transition-all duration-300">
+      <button className="border w-full border-primary rounded-xl p-2 text-sm text-primary hover:bg-primary hover:text-white transition-all duration-300">
         نمایش پروفایل
       </button>
     </div>

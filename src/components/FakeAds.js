@@ -5,6 +5,7 @@ import house4 from "../../public/4.jpg";
 
 export const Ads = [
   {
+    id: 1,
     address: "میدان انقلاب، کارگر شمالی",
     city: "Tehran",
     rahan: 400,
@@ -15,6 +16,7 @@ export const Ads = [
     timeAdded: 70,
   },
   {
+    id: 2,
     address: "میدان انقلاب، کارگر شمالی",
     city: "Tehran",
     rahan: 600,
@@ -25,6 +27,7 @@ export const Ads = [
     timeAdded: 80,
   },
   {
+    id: 3,
     address: "میدان انقلاب، کارگر شمالی",
     city: "Tehran",
     rahan: 200,
@@ -35,6 +38,7 @@ export const Ads = [
     timeAdded: 10,
   },
   {
+    id: 4,
     address: "میدان انقلاب، کارگر شمالی",
     city: "Tehran",
     rahan: 300,

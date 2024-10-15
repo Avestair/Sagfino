@@ -33,7 +33,7 @@ export default function Moshaver() {
     },
   ];
   return (
-    <div className="grid gap-8 px-24 md:mt-28 md:mb-16">
+    <div className="grid gap-4 px-24 md:mt-28 md:mb-16">
       <p className="text-xl">مشاورین برتر تهران</p>
       <div className="flex gap-12 ">
         {moshaver1.map((mosh) => (
