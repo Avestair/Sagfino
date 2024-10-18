@@ -1,18 +1,18 @@
 import { IoBookmark } from "react-icons/io5";
 import { CiBookmark } from "react-icons/ci";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useState } from "react";
 
 export default function AdCard({ address, img, tag, size, rahan, ejare }) {
   const [isBookmarked, setIsBookmarked] = useState(true);
 
   function handleBookmark() {
-    toast.success("Successfully created!");
+    isBookmarked ? toast.error("نشان حذف شد.") : toast.success("آگهی نشان شد!");
     setIsBookmarked(!isBookmarked);
   }
 
   return (
-    <div className="grid gap-5 md:hover:scale-105 transition-all duration-300 cursor-pointer rounded-2xl w-[95%] border-b border-l border-r border-gray-200 shadow shadow-gray-200 justify-items-center">
+    <div className="grid gap-5 md:hover:scale-105 transition-all duration-300 cursor-pointer rounded-2xl md:w-[95%] w-full border-b-2 border-l-2 border-r-2 border-gray-200 shadow shadow-gray-100 justify-items-center">
       <img src={img} className="ad-img-border select-none" alt="تصویر خانه" />
       <div className="flex w-full px-4 text-xs  justify-between">
         <p className="text-gray-400 select-none">{tag}</p>
