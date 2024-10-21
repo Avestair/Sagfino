@@ -16,7 +16,7 @@ export default function Amlak() {
       officeNumber: "0216789354",
     },
     {
-      id: 1,
+      id: 2,
       tittle: "املاک گل آرا",
       img: logo1,
       address: "تهران پاسداران",
@@ -27,7 +27,7 @@ export default function Amlak() {
       officeNumber: "0216789354",
     },
     {
-      id: 1,
+      id: 3,
       tittle: "املاک گل آرا",
       img: logo1,
       address: "تهران پاسداران",
@@ -38,7 +38,7 @@ export default function Amlak() {
       officeNumber: "0216789354",
     },
     {
-      id: 1,
+      id: 4,
       tittle: "املاک گل آرا",
       img: logo1,
       address: "تهران پاسداران",

@@ -1,5 +1,5 @@
 import { RiSearch2Line } from "react-icons/ri";
-import { useRecommended } from "../components/RecommendedContext";
+import { useRecommended } from "../contexts/RecommendedContext";
 import { iranProvincesAndCapitals } from "../Cities"; // Ensure you have this file with the provinces and capitals
 import { useState, useRef } from "react";
 
@@ -114,7 +114,7 @@ export function SearchboxWithRecommendtion() {
   return (
     <>
       <div
-        className={`relative grid gap-4 bg-white w-fit md:w-[50%] ${
+        className={`relative grid gap-4 bg-white w-[80%] md:w-[50%] ${
           isRecommendedHidden ? "rounded-xl" : "searchbox-border-radius"
         } p-4 font-Vazirmatn Recommendtion-scrollbar`}
       >
@@ -138,15 +138,15 @@ export function SearchboxWithRecommendtion() {
           </div>
         </div>
 
-        <div className="flex text-sm">
-          <RiSearch2Line className="w-5 h-5 text-gray-400 mt-2" />
+        <div className="flex text-sm gap-4">
+          <RiSearch2Line className="w-5 h-5 text-gray-400 md:mt-2" />
           <input
             type="text"
             placeholder="شهر یا استان مورد نظرت را وارد کن..."
             value={searchTerm}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            className="p-2 w-full transition-all duration-300 outline-none  placeholder:text-gray-400 mt-[2px]"
+            className="md:p-2 w-full transition-all duration-300 outline-none  placeholder:text-gray-400 mt-[2px]"
           />
         </div>
 
