@@ -5,7 +5,7 @@ import rent from "../../public/rent.svg";
 
 export default function Tip() {
   return (
-    <div className="grid gap-10 justify-items-center md:mt-24 md:px-24">
+    <div className="grid gap-10 justify-items-center mt-24 md:px-24">
       <div className="grid gap-4 justify-items-center">
         <p className="text-xl font-bold">سقیفنو، فرصتی برای همه</p>
         <p className="text-gray-700 hover:underline hover:underline-offset-4 cursor-pointer">

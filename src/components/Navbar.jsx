@@ -5,10 +5,11 @@ import { DesktopSvg, MobileSvg } from "../ui/Svgs";
 import { FiX } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
 import { LuUserCircle } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isNavclosed, setIsNavClosed] = useState(true);
-  const [isLoggedIn, seIsLoggedIn] = useState(true);
+  const [isLoggedIn, seIsLoggedIn] = useState(false);
 
   function handleMenu() {
     setIsNavClosed(!isNavclosed);
@@ -16,8 +17,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-center w-full">
-        <div className="flex md:justify-between w-[90%] mt-4 rounded-xl justify-around p-2 bg-white">
+      <div className="flex justify-center md:w-full">
+        <div className="flex md:justify-between bg-black md:w-[90%] mt-4 rounded-xl justify-between px-8 p-2 bg-white">
           {isNavclosed ? (
             <FiMenu
               onClick={handleMenu}
@@ -29,15 +30,29 @@ export default function Navbar() {
               className="w-7 h-7 md:hidden mt-1 text-gray-700"
             />
           )}
-          <MobileSvg />
+          <Link className="md:hidden" to={"/"}>
+            <MobileSvg />
+          </Link>
           {/*Desktop NavLinks*/}
           <div className=" gap-8 md:flex hidden items-center">
-            <DesktopSvg />
-            <LinkTag content={"اجاره"} />
-            <LinkTag content={"خرید"} />
-            <LinkTag content={"املاک و مستقلات"} />
-            <LinkTag content={"مشاورین املاک"} />
-            <LinkTag content={"اخبار روز"} />
+            <Link to={"/"}>
+              <DesktopSvg />
+            </Link>
+            <Link className="link" to={"/rent"}>
+              اجاره
+            </Link>
+            <Link className="link" to={"/buy"}>
+              خرید
+            </Link>
+            <Link className="link" to={"/realestates"}>
+              املاک و مستقلات
+            </Link>
+            <Link className="link" to={"/advisors"}>
+              مشاورین املاک
+            </Link>
+            <Link className="link" to={"/news"}>
+              اخبار روز
+            </Link>
           </div>
           {/*End Of Desktop NavLinks*/}
 

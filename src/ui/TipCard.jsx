@@ -1,6 +1,6 @@
 export default function TipCard({ img, paragraph, tittle, buttontext }) {
   return (
-    <div className=" grid justify-items-center gap-12 bg-white mb-16 !w-fit h-fit text-sm border border-gray-100 shadow shadow-gray-200 rounded-xl p-4">
+    <div className=" grid justify-items-center gap-12 bg-white mb-16 !w-fit  text-sm border border-gray-100 shadow shadow-gray-200 rounded-xl p-4">
       <img src={img} alt="" />
       <div className="grid gap-4 justify-items-center">
         <p className="text-bold text-xl">{tittle}</p>
