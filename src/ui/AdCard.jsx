@@ -7,13 +7,15 @@ import { Link } from "react-router-dom";
 export default function AdCard({ address, img, tag, size, rahan, ejare }) {
   const [isBookmarked, setIsBookmarked] = useState(true);
 
-  function handleBookmark() {
+  function handleBookmark(event) {
+    event.stopPropagation();
     isBookmarked ? toast.error("نشان حذف شد") : toast.success("آگهی نشان شد!");
     setIsBookmarked(!isBookmarked);
   }
 
   return (
-    <div className="grid gap-5 md:hover:scale-105 transition-all duration-300 cursor-pointer rounded-2xl md:w-[95%] w-full border-b-2 border-l-2 border-r-2 border-gray-200 shadow shadow-gray-100 justify-items-center">
+    <Link to={"/ads/:adId"}>
+    <div className="grid gap-5 md:hover:scale-105 transition-all duration-300 cursor-pointer rounded-2xl md:w-[95%] w-full border-b border-l border-r border-gray-200 shadow-md justify-items-center">
       <img src={img} className="ad-img-border select-none" alt="تصویر خانه" />
       <div className="flex w-full px-4 text-xs  justify-between">
         <Link to={"/"}>
@@ -33,7 +35,6 @@ export default function AdCard({ address, img, tag, size, rahan, ejare }) {
           />
         )}
       </div>
-      <Link to={"/ads/:adId"}>
         <div className="grid gap-5 text-sm w-full justify-items-start px-6 select-none">
           <p className="mb-1 font-semibold">
             {size} متر، {address}
@@ -43,7 +44,7 @@ export default function AdCard({ address, img, tag, size, rahan, ejare }) {
             <p>{ejare} میلیون تومان اجاره</p>
           </div>
         </div>
-      </Link>
     </div>
+    </Link>
   );
 }

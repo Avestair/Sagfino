@@ -150,10 +150,10 @@ export function SearchboxWithRecommendtion() {
           />
         </div>
 
-        {/* 'Not found' message
+        {/* 'Not found' message */}
         {filteredProvinces.length === 0 &&
           filteredCapitals.length === 0 &&
-          searchTerm === "" && <p>موردی یافت نشد</p>} */}
+          searchTerm !== "" && <p className="mr-2 mt-2">موردی یافت نشد</p>}
 
         {/* Recommendation section */}
         <div

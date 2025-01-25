@@ -4,6 +4,7 @@ import Error from "./components/Error";
 import Latest from "./components/Latest";
 import Home from "./components/Home";
 import AdPage from "./components/AdPage";
+import Rent from "./pages/Rent";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: "/ads/:adId",
         element: <AdPage />,
       },
+      {
+        path: "/rent",
+        element: <Rent />
+      }
     ],
   },
 ]);

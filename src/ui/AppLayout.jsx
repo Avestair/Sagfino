@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 function AppLayout() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
@@ -17,8 +18,8 @@ function AppLayout() {
         <FilterProvider>
           <CheckboxProvider>
             <div className="grid">
+            {!isHomePage && <Navbar />}
               {isLoading && <Loading />}
-
               <div className="">
                 <ScrollToTop />
                 <main className="mx-auto">
